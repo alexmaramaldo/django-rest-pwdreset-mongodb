@@ -33,7 +33,7 @@ class ResetPasswordToken(models.Model):
         """ generates a pseudo random code using os.urandom and binascii.hexlify """
         return TOKEN_GENERATOR_CLASS.generate_token()
 
-    id = models.AutoField(
+    id = models.IntegerField(
         primary_key=True
     )
 
