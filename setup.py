@@ -10,14 +10,14 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-rest-passwordreset',
-    version=os.getenv('PACKAGE_VERSION', '0.0.0').replace('refs/tags/', ''),
+    version=os.getenv('PACKAGE_VERSION', '0.0.2').replace('refs/tags/', ''),
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',
-    description='An extension of django rest framework, providing a configurable password reset strategy',
+    description='An extension of django rest framework, providing a configurable password reset strategy adapted to use DJONGO',
     long_description=README,
     long_description_content_type='text/markdown',  # This is important for README.md in markdown format
-    url='https://github.com/anexia-it/django-rest-passwordreset',
+    url='https://github.com/alexmaramaldo/django-rest-pwdreset-mongodb',
     author='Harald Nezbeda',
     author_email='HNezbeda@anexia-it.com',
     classifiers=[
